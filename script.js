@@ -1,4 +1,4 @@
-const { createElement } = require("react");
+
 
 // console.log(getHumanChoice());
 let humanScore = 0;
@@ -79,7 +79,7 @@ function playGame() {
     // playRound(humanSelection, computerSelection)
     // console.log(humanScore, "human score", computerScore, "computer score");
 
-    
+
 
     if (humanScore > computerScore) {
         console.log("Player wins!");
@@ -93,7 +93,34 @@ function playGame() {
     }
 }
 
-console.log(playGame());
 
+const rockBtn = document.createElement("button");
+const paperBtn = document.createElement("button");
+const scissorBtn = document.createElement("button");
+
+
+rockBtn.textContent = "Rock";
+paperBtn.textContent = "Paper"
+scissorBtn.textContent = "Scissor"
+document.body.append(rockBtn, paperBtn, scissorBtn);
+
+
+rockBtn.addEventListener("click", () => {
+    let choice = "rock"
+    let computerChoice = getComputerChoice();
+    playRound(choice, computerChoice);
+})
+
+paperBtn.addEventListener("click", () => {
+    let choice = "paper";
+    let computerChoice = getComputerChoice();
+    playRound(choice, computerChoice);
+});
+
+scissorBtn.addEventListener("click", () => {
+    let choice = "scissor";
+    let computerChoice = getComputerChoice();
+    playRound(choice, computerChoice);
+});
 
 // console.log(getHumanChoice());

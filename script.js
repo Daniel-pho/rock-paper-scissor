@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 // console.log(getHumanChoice());
 let humanScore = 0;
 let computerScore = 0;
@@ -52,30 +54,32 @@ function playRound(humanChoice, computerChoice) {
 // console.log(playRound(humanSelection, computerSelection));
 
 function playGame() {
-    let humanSelection = getHumanChoice();
-    let computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection)
-    console.log(humanScore, "human score", computerScore, "computer score");
+    // let humanSelection = getHumanChoice();
+    // let computerSelection = getComputerChoice();
+    // playRound(humanSelection, computerSelection)
+    // console.log(humanScore, "human score", computerScore, "computer score");
 
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection)
-    console.log(humanScore, "human score", computerScore, "computer score");
+    // humanSelection = getHumanChoice();
+    // computerSelection = getComputerChoice();
+    // playRound(humanSelection, computerSelection)
+    // console.log(humanScore, "human score", computerScore, "computer score");
 
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection)
-    console.log(humanScore, "human score", computerScore, "computer score");
+    // humanSelection = getHumanChoice();
+    // computerSelection = getComputerChoice();
+    // playRound(humanSelection, computerSelection)
+    // console.log(humanScore, "human score", computerScore, "computer score");
 
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection)
-    console.log(humanScore, "human score", computerScore, "computer score");
+    // humanSelection = getHumanChoice();
+    // computerSelection = getComputerChoice();
+    // playRound(humanSelection, computerSelection)
+    // console.log(humanScore, "human score", computerScore, "computer score");
 
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-    playRound(humanSelection, computerSelection)
-    console.log(humanScore, "human score", computerScore, "computer score");
+    // humanSelection = getHumanChoice();
+    // computerSelection = getComputerChoice();
+    // playRound(humanSelection, computerSelection)
+    // console.log(humanScore, "human score", computerScore, "computer score");
+
+    
 
     if (humanScore > computerScore) {
         console.log("Player wins!");
